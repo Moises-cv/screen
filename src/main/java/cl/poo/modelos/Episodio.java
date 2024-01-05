@@ -1,6 +1,6 @@
 package cl.poo.modelos;
 
-import Calculos.Clasificacion;
+import cl.poo.Calculos.Clasificacion;
 
 public class Episodio implements Clasificacion {
     private int numero;

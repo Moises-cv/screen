@@ -1,6 +1,6 @@
 package cl.poo.modelos;
 
-import Calculos.Clasificacion;
+import cl.poo.Calculos.Clasificacion;
 
 // Para utilizar herencia utilizamos extends
 // pelicula es un titulo

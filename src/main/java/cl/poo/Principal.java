@@ -1,10 +1,10 @@
 package cl.poo;
 
-import Calculos.CalculadoraTiempo;
-import Calculos.FiltroRecomendaciones;
-import modelos.Episodio;
-import modelos.Pelicula;
-import modelos.Serie;
+import cl.poo.Calculos.CalculadoraTiempo;
+import cl.poo.Calculos.FiltroRecomendaciones;
+import cl.poo.modelos.Episodio;
+import cl.poo.modelos.Pelicula;
+import cl.poo.modelos.Serie;
 
 public class Principal {
     public static void main(String[] args) {

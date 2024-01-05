@@ -1,5 +1,6 @@
 package cl.poo.Calculos;
-import modelos.Titulo;
+
+import cl.poo.modelos.Titulo;
 
 public class CalculadoraTiempo {
     private int tiempoTotal;
