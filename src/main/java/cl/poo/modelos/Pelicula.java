@@ -21,4 +21,9 @@ public class Pelicula extends Titulo implements Clasificacion {
     public int getClasificacion() {
         return (int) (calculaMedia() / 2);
     }
+
+    @Override
+    public String toString() {
+        return "Pelicula: " + this.getNombre() + " (" + getFechaDeLanzamiento() +")";
+    }
 }
