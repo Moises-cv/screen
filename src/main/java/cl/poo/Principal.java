@@ -12,10 +12,12 @@ public class Principal {
     public static void main(String[] args) {
         // Creamos nueva instancia de la clase pelicula con el new
         // TipodeDato nombre = creamos nueva instancia que creara un nuevo espacio en la memoria para este objeto con atributo y su valor;
-        Pelicula miPelicula = new Pelicula();
+                        /*  = estos metodos new pelicula() no son metodos son realmente constructores
+                        * estos nos sirven para reservar espacios en la memoria que nosotros le podamos colocar atributos a esa pelicula
+                        * estos no solo sirven para reservar espacios, ademas en ves de setiar los parametros de la clase
+                        * se los pasaremos como argumentos a la nueva instancia de pelicula*/
+        Pelicula miPelicula = new Pelicula("Jhon Wick", 2021);
         //utilizamos set para asignar valores a las variables
-        miPelicula.setNombre("Jhon Wick");
-        miPelicula.setFechaDeLanzamiento(2021);
         miPelicula.setDuracionEnMinutos(160);
         miPelicula.setIncluidoEnElPlan(true);
 
@@ -28,9 +30,7 @@ public class Principal {
 
 
 
-        Serie casaDragon = new Serie();
-        casaDragon.setNombre("La casa del Dragon");
-        casaDragon.setFechaDeLanzamiento(2022);
+        Serie casaDragon = new Serie("La casa del Dragon", 2022);
         casaDragon.setTemporadas(1);
         casaDragon.setMinutosEpisodio(50);
         casaDragon.setEpisodiosTemporadas(10);
@@ -60,10 +60,8 @@ public class Principal {
         *  pero java nos va a permitir cambiar el pelicula del lado izquierdo por la palabra (var)
         * lo que hace una inferencia del tipo de dato del objeto nuevo del lado derecho*/
         // clase variablereferencia = que es una nueva pelicula;
-        var peliculaMoises = new Pelicula();
-        peliculaMoises.setNombre("El señor de los añillos");
+        var peliculaMoises = new Pelicula("El señor de los añillos", 2001);
         peliculaMoises.setDuracionEnMinutos(180);
-        peliculaMoises.setFechaDeLanzamiento(2001);
 
         /* como creamos un ArrayList
         * importamos ArrayList de java.util

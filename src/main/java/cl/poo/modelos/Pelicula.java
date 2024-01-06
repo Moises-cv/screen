@@ -9,6 +9,11 @@ import cl.poo.Calculos.Clasificacion;
 public class Pelicula extends Titulo implements Clasificacion {
     private String director;
 
+    // constructor que hace match con el constructor de titulo
+    public Pelicula(String nombre, int fechaDeLanzamiento) {
+        super(nombre, fechaDeLanzamiento);
+    }
+
     public String getDirector() {
         return director;
     }

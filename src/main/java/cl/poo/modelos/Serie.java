@@ -7,6 +7,10 @@ public class Serie extends Titulo{
     int episodiosTemporadas;
     int minutosEpisodio;
 
+    public Serie(String nombre, int fechaDeLanzamiento) {
+        super(nombre, fechaDeLanzamiento);
+    }
+
     // sobreescritura de metodos esto se debe que desde titulo no se sabe los minutos para series
     // por lo tanto sobreescribimos el metodo con @Override de titulos aqui en series para poder utilizarlo segun las reglas de negocios de series
     @Override
