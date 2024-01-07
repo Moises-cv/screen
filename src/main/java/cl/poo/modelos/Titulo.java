@@ -1,7 +1,8 @@
 package cl.poo.modelos;
 
 // Creamos clase (objeto) pelicula y sus atributos
-public class Titulo {
+// implementamos Comparable<Titulo> y importamos metodos
+public class Titulo implements Comparable<Titulo> {
     // encapsulamiento (modificadores de acceso) se realiza para que el usuario no sepa como funciona nuestro proyecto en logica de tal manera de solo mostrar el producto final
     private String nombre;
     private int fechaDeLanzamiento;
@@ -74,5 +75,12 @@ public class Titulo {
 
     public double calculaMedia() {
         return sumaDeLasEvaluaciones / totalEvaluaciones;
+    }
+
+    // metodo para comparar
+    @Override
+    public int compareTo(Titulo otroTitulo) {
+        // retornamos que el nombre de este objeto lo compararemos con otroTituloNombre
+        return this.getNombre().compareTo(otroTitulo.getNombre());
     }
 }
