@@ -1,4 +1,4 @@
-package cl.poo;
+package cl.poo.principal;
 
 import cl.poo.Calculos.CalculadoraTiempo;
 import cl.poo.Calculos.FiltroRecomendaciones;
