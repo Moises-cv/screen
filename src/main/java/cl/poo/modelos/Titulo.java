@@ -1,10 +1,14 @@
 package cl.poo.modelos;
 
+import com.google.gson.annotations.SerializedName;
+
 // Creamos clase (objeto) pelicula y sus atributos
 // implementamos Comparable<Titulo> y importamos metodos
 public class Titulo implements Comparable<Titulo> {
     // encapsulamiento (modificadores de acceso) se realiza para que el usuario no sepa como funciona nuestro proyecto en logica de tal manera de solo mostrar el producto final
+    @SerializedName("Title")
     private String nombre;
+    @SerializedName("Year")
     private int fechaDeLanzamiento;
     private int duracionEnMinutos;
     private boolean incluidoEnElPlan;
@@ -17,6 +21,13 @@ public class Titulo implements Comparable<Titulo> {
     public Titulo(String nombre, int fechaDeLanzamiento) {
         this.nombre = nombre;
         this.fechaDeLanzamiento = fechaDeLanzamiento;
+    }
+
+    public Titulo(TituloOmdb miTituloOmdb) {
+        this.nombre = miTituloOmdb.title();
+        this.fechaDeLanzamiento = Integer.valueOf(miTituloOmdb.year());
+        this.duracionEnMinutos = Integer.valueOf(miTituloOmdb.runtime().substring(0,2));
+
     }
 
     public String getNombre() {
@@ -82,5 +93,12 @@ public class Titulo implements Comparable<Titulo> {
     public int compareTo(Titulo otroTitulo) {
         // retornamos que el nombre de este objeto lo compararemos con otroTituloNombre
         return this.getNombre().compareTo(otroTitulo.getNombre());
+    }
+
+    @Override
+    public String toString() {
+        return "nombre='" + nombre + '\'' +
+                ", fechaDeLanzamiento=" + fechaDeLanzamiento +
+                ", duracion=" + duracionEnMinutos;
     }
 }

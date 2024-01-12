@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e396820-d874-4dcb-bdca-9838cb64370d" name="Changes" comment="se refactorizaron package">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cl/poo/principal/PrincipalConBusqueda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cl/poo/modelos/TituloOmdb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cl/poo/modelos/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cl/poo/modelos/Titulo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cl/poo/principal/PrincipalConBusqueda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cl/poo/principal/PrincipalConBusqueda.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -56,11 +59,14 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/IdeaProjects/Alura/Aprende a programar en Java con Orientación a Objetos/screen/src/main/java/cl/poo&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/IdeaProjects/Proyectos/Portafolio&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -82,7 +88,9 @@
       <workItem from="1704563679034" duration="7316000" />
       <workItem from="1704596338017" duration="4220000" />
       <workItem from="1704657021245" duration="875000" />
-      <workItem from="1704677346404" duration="2243000" />
+      <workItem from="1704677346404" duration="4247000" />
+      <workItem from="1705080998228" duration="708000" />
+      <workItem from="1705092319217" duration="1859000" />
     </task>
     <servers />
   </component>
